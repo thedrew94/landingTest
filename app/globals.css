@@ -2,20 +2,15 @@
 
 :root {
   /* COLOR PALETTE */
-  --background: #ffffff;
-  --foreground: #171717;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-
-  --color-1: "#6633FF";
-  --color-2: "#ffffff47";
+  --background: #111011;
+  --foreground: #111011;
 
   /* TYPOGRAPHY */
-  --font-size-h1: 4.6rem;
+  --font-size-h1: 15.6rem;
   --font-size-h2: 3rem;
   --font-size-h3: 2.5rem;
   --font-size-h4: 2.3rem;
-  --font-size-h5: 2rem;
+  --font-size-h5: 1.6rem;
   --font-size-h6: 1.8rem;
   --font-size-p: 1.6rem;
 
@@ -25,8 +20,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #111011;
+    --foreground: #111011;
   }
 }
 
@@ -106,19 +101,47 @@ img:not([src]) {
 @media (hover: hover) and (pointer: fine) {
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 /* CUSTOM TAILWIND UTILITIES CLASSES */
 @layer utilities {
-  .text-h5 {
-    font-size: 1.6rem;
+  .text-h1 {
+    font-size: var(--font-size-h1);
     font-weight: 450;
-    line-height: 1.6rem;
+    line-height: 86%;
+    letter-spacing: 0;
+  }
+
+  .text-h5 {
+    font-size: var(--font-size-h5);
+    font-weight: 450;
+    line-height: var(--font-size-h5);
     letter-spacing: 0;
   }
 
   .text-h5-bold {
-    font-size: 1.6rem;
+    font-size: var(--font-size-h5);
     font-weight: bold;
-    line-height: 1.6rem;
+    line-height: var(--font-size-h5);
+    letter-spacing: 0;
+  }
+
+  .text-p {
+    font-size: var(--font-size-p);
+    font-weight: 450;
+    line-height: 125%;
+    letter-spacing: 0;
+  }
+
+  .text-p-bold {
+    font-size: var(--font-size-p);
+    font-weight: bold;
+    line-height: 125%;
     letter-spacing: 0;
   }
 

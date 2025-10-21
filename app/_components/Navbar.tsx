@@ -22,7 +22,7 @@ const navbarList = [
 
 export default function Navbar() {
   return (
-    <nav className="absolute top-0 left-0 z-10 w-full h-[64px] flex justify-between items-center gap-4 bg-[rgba(0,0,0,0.28)] backdrop-blur-xl border-nav">
+    <nav className="absolute top-0 left-0 z-2 w-full h-[64px] flex justify-between items-center gap-4 bg-[rgba(0,0,0,0.28)] backdrop-blur-xl border-nav">
       <div className="h-full flex items-center gap-[16px]">
         <div className="w-[285px] max-w-[285px] h-full flex items-center">
           <span className="w-[64px] h-full flex justify-center items-center bg-[#6633FF]">
