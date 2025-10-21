@@ -1,3 +1,4 @@
+import CtaSection from "../_components/CtaSection";
 import Hero from "../_components/Hero";
 import IntroSection from "../_components/IntroSection";
 import Navbar from "../_components/Navbar";
@@ -11,8 +12,7 @@ export default function Page() {
       </header>
       <main className="bg-black">
         <IntroSection />
-        {/* CTA SECTION */}
-        <div></div>
+        <CtaSection />
         {/* FEATURED SECTION */}
         <div></div>
         {/* ANIMATED HORIZONTAL SLIDER SECTION */}

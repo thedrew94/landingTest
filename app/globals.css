@@ -4,12 +4,13 @@
   /* COLOR PALETTE */
   --background: #111011;
   --foreground: #111011;
+  --color-opaque: rgba(255, 255, 255, 0.28);
 
   /* TYPOGRAPHY */
   --font-size-h1: 15.6rem;
   --font-size-h2: 3rem;
   --font-size-h3: 8rem;
-  --font-size-h4: 2.3rem;
+  --font-size-h4: 2.4rem;
   --font-size-h5: 1.6rem;
   --font-size-h6: 15.6rem;
   --font-size-p: 1.6rem;
@@ -103,8 +104,7 @@ img:not([src]) {
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-opaque: var(--color-opaque);
 }
 
 /* CUSTOM TAILWIND UTILITIES CLASSES */
@@ -113,6 +113,20 @@ img:not([src]) {
     font-size: var(--font-size-h1);
     font-weight: 450;
     line-height: 86%;
+    letter-spacing: 0;
+  }
+
+  .text-h4 {
+    font-size: var(--font-size-h4);
+    font-weight: 450;
+    line-height: 114.9%;
+    letter-spacing: 0;
+  }
+
+  .text-h4-bold {
+    font-size: var(--font-size-h4);
+    font-weight: bold;
+    line-height: 114.9%;
     letter-spacing: 0;
   }
 
