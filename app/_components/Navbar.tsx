@@ -1,7 +1,8 @@
+import { NavbarListElInterface } from "@/types/interfaces";
 import { svgSelector } from "../_utils/svgSelector";
 import NavbarListEl from "./NavbarListEl";
 
-const navbarList = [
+const navbarList: Array<NavbarListElInterface> = [
   {
     title: "Chi Siamo",
     subtitle: "L*3",
