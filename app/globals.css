@@ -1,15 +1,26 @@
 @import "tailwindcss";
 
 :root {
+  /* COLOR PALETTE */
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-1: "#6633FF";
+  --color-2: "#ffffff47";
+
+  /* TYPOGRAPHY */
+  --font-size-h1: 4.6rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2.5rem;
+  --font-size-h4: 2.3rem;
+  --font-size-h5: 2rem;
+  --font-size-h6: 1.8rem;
+  --font-size-p: 1.6rem;
+
+  /* OTHERS */
+  --cursor: url("../public/cursor_16.png") 0 0, auto !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +30,96 @@
   }
 }
 
+/* DEFAULT SETTINGS FOR ALL ELEMENTS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  cursor: var(--cursor);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  cursor: var(--cursor);
+}
+
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+[role="button"],
+[role="option"],
+[role="link"],
+[tabindex],
+ul,
+ol,
+li,
+label,
+fieldset {
+  background: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  text-align: inherit;
+  color: inherit;
+  cursor: var(--cursor);
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+img[src=""],
+img:not([src]) {
+  /* TODO: add a real fallback img path */
+  background-image: url("/fallback-avatar.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* HOVER CLASSES RENDERED ONLY FOR DEVICES CAPABLE OF SUPPORTING IT */
+@media (hover: hover) and (pointer: fine) {
+}
+
+/* CUSTOM TAILWIND UTILITIES CLASSES */
+@layer utilities {
+  .text-h5 {
+    font-size: 1.6rem;
+    font-weight: 450;
+    line-height: 1.6rem;
+    letter-spacing: 0;
+  }
+
+  .text-h5-bold {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    letter-spacing: 0;
+  }
 }
