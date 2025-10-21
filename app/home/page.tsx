@@ -1,4 +1,5 @@
 import Hero from "../_components/Hero";
+import IntroSection from "../_components/IntroSection";
 import Navbar from "../_components/Navbar";
 
 export default function Page() {
@@ -8,15 +9,8 @@ export default function Page() {
         <Navbar />
         <Hero />
       </header>
-      <main className="bg-[rgba(0, 0, 0, 1)]">
-        {/* INTRO SECTION */}
-        <div>
-          <h2>Il laboratorio urbano della Città di Lugano.</h2>
-          <h3>
-            Promuoviamo e facilitiamo l'innovazione digitale e tecnologica, creando, testando e implementando soluzioni
-            pensate per una città più intelligente, ma sempre a misura d’uomo.
-          </h3>
-        </div>
+      <main className="bg-black">
+        <IntroSection />
         {/* CTA SECTION */}
         <div></div>
         {/* FEATURED SECTION */}

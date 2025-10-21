@@ -8,10 +8,10 @@
   /* TYPOGRAPHY */
   --font-size-h1: 15.6rem;
   --font-size-h2: 3rem;
-  --font-size-h3: 2.5rem;
+  --font-size-h3: 8rem;
   --font-size-h4: 2.3rem;
   --font-size-h5: 1.6rem;
-  --font-size-h6: 1.8rem;
+  --font-size-h6: 15.6rem;
   --font-size-p: 1.6rem;
 
   /* OTHERS */
@@ -116,6 +116,20 @@ img:not([src]) {
     letter-spacing: 0;
   }
 
+  .text-h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 450;
+    line-height: 92%;
+    letter-spacing: 0;
+  }
+
+  .text-h3-bold {
+    font-size: var(--font-size-h3);
+    font-weight: bold;
+    line-height: 92%;
+    letter-spacing: 0;
+  }
+
   .text-h5 {
     font-size: var(--font-size-h5);
     font-weight: 450;
@@ -127,6 +141,20 @@ img:not([src]) {
     font-size: var(--font-size-h5);
     font-weight: bold;
     line-height: var(--font-size-h5);
+    letter-spacing: 0;
+  }
+
+  .text-h6 {
+    font-size: var(--font-size-h6);
+    font-weight: 450;
+    line-height: 86%;
+    letter-spacing: 0;
+  }
+
+  .text-h6-bold {
+    font-size: var(--font-size-h6);
+    font-weight: bold;
+    line-height: 86%;
     letter-spacing: 0;
   }
 
@@ -146,5 +174,9 @@ img:not([src]) {
 
   .border-nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+  }
+
+  .border-row {
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
   }
 }
