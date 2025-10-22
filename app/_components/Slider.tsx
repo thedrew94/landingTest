@@ -5,6 +5,47 @@ import Swiper from "swiper";
 import { FreeMode } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
+import Image from "next/image";
+import SlideImg from "@/public/mockup_img1.jpg";
+
+const slides: Array<Record<any, any>> = [
+  {
+    title: "App MyLugano",
+    bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
+    img: SlideImg,
+    imgAlt: "Mockup image",
+  },
+  {
+    title: "App MyLugano",
+    bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
+    img: SlideImg,
+    imgAlt: "Mockup image",
+  },
+  {
+    title: "App MyLugano",
+    bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
+    img: SlideImg,
+    imgAlt: "Mockup image",
+  },
+  {
+    title: "App MyLugano",
+    bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
+    img: SlideImg,
+    imgAlt: "Mockup image",
+  },
+  {
+    title: "App MyLugano",
+    bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
+    img: SlideImg,
+    imgAlt: "Mockup image",
+  },
+  {
+    title: "App MyLugano",
+    bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
+    img: SlideImg,
+    imgAlt: "Mockup image",
+  },
+];
 
 export default function Slider() {
   // We use (swiperRef) to store the Swiper instance not to reference the DOM element
@@ -32,14 +73,35 @@ export default function Slider() {
   return (
     <div className="swiper w-full h-[540px]">
       <div className="swiper-wrapper">
-        <div className="swiper-slide w-full max-w-[437px] bg-red-400">Slide 1</div>
-        <div className="swiper-slide w-full max-w-[437px] bg-green-400">Slide 2</div>
-        <div className="swiper-slide w-full max-w-[437px] bg-blue-400">Slide 3</div>
-        <div className="swiper-slide w-full max-w-[437px] bg-red-400">Slide 1</div>
-        <div className="swiper-slide w-full max-w-[437px] bg-green-400">Slide 2</div>
-        <div className="swiper-slide w-full max-w-[437px] bg-blue-400">Slide 3</div>
-        <div className="swiper-slide w-full max-w-[437px] bg-green-400">Slide 2</div>
-        <div className="swiper-slide w-full max-w-[437px] bg-blue-400">Slide 3</div>
+        {slides &&
+          slides.length > 0 &&
+          slides.map((sEl, idx) => {
+            return (
+              <div
+                key={`slide_el_${idx}`}
+                className="swiper-slide slide-custom relative w-full max-w-[437px] h-full bg-red-400 overflow-hidden group"
+              >
+                <Image
+                  className="object-cover group-hover:scale-100 transition-transform duration-250 group-hover:bottom-0"
+                  src={sEl.img}
+                  alt={sEl.imgAlt}
+                  placeholder="blur"
+                  quality={80}
+                  fill
+                />
+                <div className="absolute z-1 top-0 left-0 w-full h-full">
+                  <span className="p-[16px] text-h3">{idx + 1}</span>
+
+                  <div className="absolute bottom-[-70px] right-0 w-[calc(100%-48px)] h-[140px] duration-250 bg-white transition-all group-hover:bottom-0">
+                    <div className="w-full h-full p-[16px]">
+                      <h3 className="text-h4 text-black">{sEl.title || "title_undefined"}</h3>
+                      <h6>{sEl.bodyText || "body_text_undefined"}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
       </div>
     </div>
   );

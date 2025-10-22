@@ -208,3 +208,11 @@ img:not([src]) {
     border-top: 1px solid rgba(255, 255, 255, 0.28);
   }
 }
+
+.slide-custom img {
+  transition: all 0.25s;
+}
+
+.slide-custom:hover img {
+  transform: scale(1.1);
+}
