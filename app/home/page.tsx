@@ -55,23 +55,81 @@ export default function Page() {
 
       {/* FOOTER */}
       <footer className="pt-[64px] bg-black">
-        {/* FOOTER TOP */}
-        <div>
-          <ul>
-            <li></li>
-          </ul>
-          <ul>
+        <div className="flex flex-col justify-between h-[900px] p-[16px]">
+          {/* FOOTER TOP */}
+          <div className="flex justify-between gap-[16px]">
+            <div>
+              <h5 className="text-h4">Città di Lugano</h5>
+              <h6 className="text-h4 text-[rgba(255,255,255,0.56)]">
+                Comunicazione e innovazione digitale
+                <br />
+                Lugano Living Lab
+                <br />
+                Piazza della Riforma 1<br />
+                CH-6900 Locarno
+              </h6>
+            </div>
+            <div className="flex gap-[16px]">
+              <ul className="flex flex-col gap-[16px] w-[340px]">
+                <li>
+                  <a href="" className="text-p">
+                    Progetti
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-p">
+                    Eventi
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-p">
+                    Ricerca
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-p">
+                    Contatto
+                  </a>
+                </li>
+              </ul>
+              <ul className="flex flex-col gap-[16px] w-[340px]">
+                <li>
+                  <a href="" className="text-p">
+                    Network
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-p">
+                    Privacy policies
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-p">
+                    Impressum
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* FOOTER BOTTOM */}
+          <ul className="flex items-center gap-[16px]">
             <li>
-              <a href=""></a>
+              <a href="">Linkedin</a>
             </li>
-          </ul>
-          <ul>
             <li>
-              <a href=""></a>
+              <a href="">Facebook</a>
+            </li>
+            <li>
+              <a href="">X</a>
+            </li>
+            <li>
+              <a href="">YouTube</a>
+            </li>
+            <li>
+              <a href="">Instagram</a>
             </li>
           </ul>
         </div>
-        {/* FOOTER BOTTOM */}
       </footer>
     </div>
   );

@@ -130,20 +130,6 @@ img:not([src]) {
     letter-spacing: 0;
   }
 
-  .text-h4 {
-    font-size: var(--font-size-h4);
-    font-weight: 450;
-    line-height: 114.9%;
-    letter-spacing: 0;
-  }
-
-  .text-h4-bold {
-    font-size: var(--font-size-h4);
-    font-weight: bold;
-    line-height: 114.9%;
-    letter-spacing: 0;
-  }
-
   .text-h3 {
     font-size: var(--font-size-h3);
     font-weight: 450;
@@ -155,6 +141,20 @@ img:not([src]) {
     font-size: var(--font-size-h3);
     font-weight: bold;
     line-height: 92%;
+    letter-spacing: 0;
+  }
+
+  .text-h4 {
+    font-size: var(--font-size-h4);
+    font-weight: 450;
+    line-height: 114.9%;
+    letter-spacing: 0;
+  }
+
+  .text-h4-bold {
+    font-size: var(--font-size-h4);
+    font-weight: bold;
+    line-height: 114.9%;
     letter-spacing: 0;
   }
 
@@ -209,10 +209,10 @@ img:not([src]) {
   }
 }
 
-.slide-custom img {
+/* .slide-custom img {
   transition: all 0.25s;
 }
 
 .slide-custom:hover img {
   transform: scale(1.1);
-}
+} */
