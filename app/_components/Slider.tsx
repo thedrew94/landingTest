@@ -82,7 +82,7 @@ export default function Slider() {
                 className="swiper-slide slide-custom relative w-full max-w-[437px] h-full bg-red-400 overflow-hidden group"
               >
                 <Image
-                  className="object-cover group-hover:scale-100 transition-transform duration-250 group-hover:bottom-0"
+                  className="object-cover transition-transform duration-250 group-hover:scale-110"
                   src={sEl.img}
                   alt={sEl.imgAlt}
                   // placeholder="blur"
@@ -92,10 +92,12 @@ export default function Slider() {
                 <div className="absolute z-1 top-0 left-0 w-full h-full">
                   <span className="p-[16px] text-h3">{idx + 1}</span>
 
-                  <div className="absolute bottom-[-70px] right-0 w-[calc(100%-48px)] h-[140px] duration-250 bg-white transition-all group-hover:bottom-0">
-                    <div className="w-full h-full p-[16px]">
+                  <div className="absolute bottom-[-110px] right-0 w-[calc(100%-48px)] h-[180px] duration-250 bg-white transition-all group-hover:bottom-0">
+                    <div className="h-full p-[16px]">
                       <h3 className="text-h4 text-black">{sEl.title || "title_undefined"}</h3>
-                      <h6>{sEl.bodyText || "body_text_undefined"}</h6>
+                      <h6 className="mt-[8px] text-h5 text-black opacity-0 transition-all duration-250 group-hover:opacity-100">
+                        {sEl.bodyText || "body_text_undefined"}
+                      </h6>
                     </div>
                   </div>
                 </div>

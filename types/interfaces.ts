@@ -9,3 +9,8 @@ export interface SponsorElInterface {
   name: string;
   imgPath?: StaticImageData | string;
 }
+
+export interface NavItem {
+  label: string;
+  href: string;
+}
