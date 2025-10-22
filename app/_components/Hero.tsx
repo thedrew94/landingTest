@@ -1,20 +1,6 @@
 export default function Hero() {
   return (
-    <div className="relative z-1 w-full h-[calc(100vh-32px)] flex items-end">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        // poster={""}
-        className="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
-        title={"Particles video"}
-      >
-        <source src={"/particles_video.mp4"} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
+    <div className="relative w-full h-[calc(100vh-32px)] flex items-end">
       <div className="absolute z-1 w-full top-1/2 translate-y-[-50%] flex justify-between">
         <p className="text-p">Tecnologia</p>
         <p className="text-p">Innovazione</p>
@@ -25,6 +11,8 @@ export default function Hero() {
         Lugano <br />
         Living Lab
       </h1>
+
+      <span className="absolute bottom-0 right-0 text-p">/// Scroll to explore</span>
     </div>
   );
 }
