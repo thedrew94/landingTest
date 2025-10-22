@@ -13,16 +13,16 @@ export default function IntroSection() {
           pensate per una città più intelligente, ma sempre a misura d’uomo.
         </h3>
       </div>
-      <div className="flex justify-between items-center pt-[64px] border-row">
-        <div>
+      <div className="flex items-center gap-[16px] pt-[64px] border-row">
+        <div className="w-full">
           <span className="text-p text-[#B38FFF]">Visione</span>
           <p className="text-h6">2030</p>
         </div>
-        <div>
+        <div className="w-full">
           <span className="text-p text-[#B38FFF]">Progetti pilota</span>
           <p className="text-h6">40+</p>
         </div>
-        <div>
+        <div className="w-full">
           <span className="text-p text-[#B38FFF]">Partner coinvolti</span>
           <p className="text-h6">100+</p>
         </div>
