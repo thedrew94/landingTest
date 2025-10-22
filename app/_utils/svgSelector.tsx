@@ -37,6 +37,23 @@ export function svgSelector({ svgName = "default", svgWidth = "0px", svgHeight =
           />
         </svg>
       );
+    case "arrow_horizontal":
+      return (
+        <svg
+          viewBox="0 0 128 128"
+          width={svgWidth}
+          height={svgHeight}
+          className={`min-w-[${svgWidth}] min-h-[${svgHeight}]`}
+        >
+          <path
+            d="M74.6667 101.333L112 64.0001L74.6667 26.6667"
+            stroke={svgFill}
+            strokeWidth="8"
+            strokeMiterlimit="10"
+          />
+          <path d="M112 64H10.6667" stroke={svgFill} strokeWidth="8" strokeMiterlimit="10" />
+        </svg>
+      );
     case "star":
       return (
         <svg

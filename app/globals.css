@@ -8,7 +8,7 @@
 
   /* TYPOGRAPHY */
   --font-size-h1: 15.6rem;
-  --font-size-h2: 3rem;
+  --font-size-h2: 13.2rem;
   --font-size-h3: 8rem;
   --font-size-h4: 2.4rem;
   --font-size-h5: 1.6rem;
@@ -113,6 +113,20 @@ img:not([src]) {
     font-size: var(--font-size-h1);
     font-weight: 450;
     line-height: 86%;
+    letter-spacing: 0;
+  }
+
+  .text-h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 450;
+    line-height: 85%;
+    letter-spacing: 0;
+  }
+
+  .text-h2-bold {
+    font-size: var(--font-size-h2);
+    font-weight: bold;
+    line-height: 85%;
     letter-spacing: 0;
   }
 

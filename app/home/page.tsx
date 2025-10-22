@@ -23,11 +23,18 @@ export default function Page() {
         <header className="absolute top-0 left-0 w-full p-[16px]">
           <Navbar />
           <Hero />
-        </header>{" "}
+        </header>
         <IntroSection />
       </div>
-      <main className="">
+      <main className="bg-black">
         <CtaSection />
+        {/* MASKED TITLE */}
+        <div className="relative h-full pt-[128px] pb-[64px] px-[16px]">
+          <h2 className="left-[29px] text-h2">Ascoltiamo</h2>
+          <h2 className="left-[279px] text-h2">Sperimentiamo</h2>
+          <h2 className="left-[198px] text-h2">Misuriamo</h2>
+          <h2 className="left-[678px] text-h2">Diffondiamo</h2>
+        </div>
         {/* FEATURED SECTION */}
         <div></div>
         {/* ANIMATED HORIZONTAL SLIDER SECTION */}
