@@ -3,6 +3,7 @@ import Hero from "../_components/Hero";
 import IntroSection from "../_components/IntroSection";
 import Navbar from "../_components/Navbar";
 import Slider from "../_components/Slider";
+import SponsorsSection from "../_components/SponsorsSection";
 
 export default function Page() {
   return (
@@ -45,10 +46,9 @@ export default function Page() {
             <p className="text-p">[ Tutti i progetti ]</p>
           </div>
           {/* SLIDER */}
-          <div>
-            <Slider />
-          </div>
+          <Slider />
         </div>
+        <SponsorsSection />
         {/* ANIMATED HORIZONTAL SLIDER SECTION */}
         <div></div>
       </main>

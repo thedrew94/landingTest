@@ -30,7 +30,7 @@ export default function Slider() {
   }, []);
 
   return (
-    <div className="swiper w-full h-[400px]">
+    <div className="swiper w-full h-[540px]">
       <div className="swiper-wrapper">
         <div className="swiper-slide w-full max-w-[437px] bg-red-400">Slide 1</div>
         <div className="swiper-slide w-full max-w-[437px] bg-green-400">Slide 2</div>
