@@ -1,12 +1,13 @@
 import { SponsorElInterface } from "@/types/interfaces";
 import SponsorList from "./SponsorList";
+import SponsorImg from "@/public/sponsor_1.png";
 
 // SPONSORS MOCKUP DATA
 // prettier-ignore
-const sponsorsPrimary: Array<SponsorElInterface> = [{ name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }];
+const sponsorsPrimary: Array<SponsorElInterface> = [{ name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }];
 
 // prettier-ignore
-const sponsorsSecondary: Array<SponsorElInterface> = [{ name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }, { name: "sponsor1", imgPath: "" }];
+const sponsorsSecondary: Array<SponsorElInterface> = [{ name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }, { name: "sponsor1", imgPath: SponsorImg }];
 
 export default function SponsorsSection() {
   return (

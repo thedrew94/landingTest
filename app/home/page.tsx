@@ -54,7 +54,25 @@ export default function Page() {
       </main>
 
       {/* FOOTER */}
-      <footer></footer>
+      <footer className="pt-[64px] bg-black">
+        {/* FOOTER TOP */}
+        <div>
+          <ul>
+            <li></li>
+          </ul>
+          <ul>
+            <li>
+              <a href=""></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href=""></a>
+            </li>
+          </ul>
+        </div>
+        {/* FOOTER BOTTOM */}
+      </footer>
     </div>
   );
 }

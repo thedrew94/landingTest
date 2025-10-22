@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface NavbarListElInterface {
   title: string;
   subtitle: string;
@@ -5,5 +7,5 @@ export interface NavbarListElInterface {
 
 export interface SponsorElInterface {
   name: string;
-  imgPath: string;
+  imgPath?: StaticImageData | string;
 }

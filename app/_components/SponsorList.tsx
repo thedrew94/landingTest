@@ -1,4 +1,5 @@
 import { SponsorElInterface } from "@/types/interfaces";
+import Image from "next/image";
 
 interface Props {
   sponsorListData: Array<SponsorElInterface>;
@@ -14,7 +15,19 @@ export default function SponsorList({ sponsorListData = [] }: Props) {
             <li
               key={`sponsor_el_${idx}`}
               className="min-w-[180px] w-[180px] p-[24px] aspect-square bg-[rgba(255,255,255,0.16)]"
-            ></li>
+            >
+              <div className="relative w-full h-full opacity-100 mix-blend-lighten ">
+                <Image
+                  className="object-cover"
+                  src={sEl.imgPath || "/fallback-image.png"}
+                  alt={sEl.name || "Sponsor Image"}
+                  // placeholder="blur"
+                  // blurDataURL={"sponsor_1.png"}
+                  quality={80}
+                  fill
+                />
+              </div>
+            </li>
           );
         })}
     </ul>

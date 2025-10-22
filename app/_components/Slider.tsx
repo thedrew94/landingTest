@@ -85,7 +85,7 @@ export default function Slider() {
                   className="object-cover group-hover:scale-100 transition-transform duration-250 group-hover:bottom-0"
                   src={sEl.img}
                   alt={sEl.imgAlt}
-                  placeholder="blur"
+                  // placeholder="blur"
                   quality={80}
                   fill
                 />
