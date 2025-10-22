@@ -2,6 +2,7 @@ import CtaSection from "../_components/CtaSection";
 import Hero from "../_components/Hero";
 import IntroSection from "../_components/IntroSection";
 import Navbar from "../_components/Navbar";
+import Slider from "../_components/Slider";
 
 export default function Page() {
   return (
@@ -29,14 +30,25 @@ export default function Page() {
       <main className="bg-black">
         <CtaSection />
         {/* MASKED TITLE */}
-        <div className="relative h-full pt-[128px] pb-[64px] px-[16px]">
-          <h2 className="left-[29px] text-h2">Ascoltiamo</h2>
-          <h2 className="left-[279px] text-h2">Sperimentiamo</h2>
-          <h2 className="left-[198px] text-h2">Misuriamo</h2>
-          <h2 className="left-[678px] text-h2">Diffondiamo</h2>
+        <div className="relative h-full pt-[128px] pb-[64px] px-[16px] overflow-hidden">
+          <h2 className="translate-x-[29px] text-h2">Ascoltiamo</h2>
+          <h2 className="translate-x-[279px] text-h2">Sperimentiamo</h2>
+          <h2 className="translate-x-[198px] text-h2">Misuriamo</h2>
+          <h2 className="translate-x-[678px] text-h2">Diffondiamo</h2>
         </div>
         {/* FEATURED SECTION */}
-        <div></div>
+        <div className="py-[119px]">
+          {/* TOP ROW */}
+          <div className="flex justify-between items-baseline-last pt-[16px] pb-[32px] px-[16px]">
+            <p className="text-p">Progetti 8</p>
+            <h3 className="text-h3">L*3 in evidenza</h3>
+            <p className="text-p">[ Tutti i progetti ]</p>
+          </div>
+          {/* SLIDER */}
+          <div>
+            <Slider />
+          </div>
+        </div>
         {/* ANIMATED HORIZONTAL SLIDER SECTION */}
         <div></div>
       </main>
