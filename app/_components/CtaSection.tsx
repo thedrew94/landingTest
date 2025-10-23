@@ -3,7 +3,7 @@ import CtaTop from "./CtaTop";
 
 export default function CtaSection() {
   return (
-    <div className="relative z-1 w-full h-[760px] flex flex-col justify-between pt-[16px]">
+    <div className="relative z-1 w-full h-[812px] xl:h-[760px] flex flex-col justify-between pt-[16px]">
       <video
         autoPlay
         muted

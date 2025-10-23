@@ -33,11 +33,11 @@ export default function Page() {
       <main className="bg-black">
         <CtaSection />
         {/* MASKED TITLE */}
-        <div className="relative h-full pt-[128px] pb-[64px] px-[16px]">
-          <h2 className="translate-x-[29px] text-h2">Ascoltiamo</h2>
-          <h2 className="translate-x-[279px] text-h2">Sperimentiamo</h2>
-          <h2 className="translate-x-[198px] text-h2">Misuriamo</h2>
-          <h2 className="translate-x-[678px] text-h2">Diffondiamo</h2>
+        <div className="relative h-full pt-[96px] pb-[49px] xl:pt-[128px] xl:pb-[64px] px-[16px]">
+          <h2 className="text-left xl:translate-x-[29px] text-h9 xl:text-h2">Ascoltiamo</h2>
+          <h2 className="text-right xl:text-left xl:translate-x-[279px] text-h9 xl:text-h2">Sperimentiamo</h2>
+          <h2 className="text-left xl:translate-x-[198px] text-h9 xl:text-h2">Misuriamo</h2>
+          <h2 className="text-right xl:text-left xl:translate-x-[678px] text-h9 xl:text-h2">Diffondiamo</h2>
         </div>
         {/* FEATURED SECTION */}
         <div className="py-[119px]">
