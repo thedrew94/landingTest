@@ -14,6 +14,7 @@
   --font-size-h5: 1.6rem;
   --font-size-h6: 15.6rem;
   --font-size-h7: 3.6rem;
+  --font-size-h8: 6rem;
   --font-size-p: 1.6rem;
 
   /* OTHERS */
@@ -106,6 +107,7 @@ img:not([src]) {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-opaque: var(--color-opaque);
+  --color-textopaque: rgba(255, 255, 255, 0.56);
 }
 
 /* CUSTOM TAILWIND UTILITIES CLASSES */
@@ -159,6 +161,13 @@ img:not([src]) {
     letter-spacing: 0;
   }
 
+  .text-h8 {
+    font-size: var(--font-size-h8);
+    font-weight: 450;
+    line-height: 86%;
+    letter-spacing: 0;
+  }
+
   .text-p {
     font-size: var(--font-size-p);
     font-weight: 450;
@@ -171,6 +180,43 @@ img:not([src]) {
     font-weight: 450;
     line-height: 100%;
     letter-spacing: 0;
+  }
+
+  @media (min-width: 1280px) {
+    .xl\:text-h1 {
+      font-size: var(--font-size-h1);
+      font-weight: 450;
+      line-height: 86%;
+      letter-spacing: 0;
+    }
+
+    .xl\:text-h3 {
+      font-size: var(--font-size-h3);
+      font-weight: 450;
+      line-height: 92%;
+      letter-spacing: 0;
+    }
+
+    .xl\:text-h6 {
+      font-size: var(--font-size-h6);
+      font-weight: 450;
+      line-height: 86%;
+      letter-spacing: 0;
+    }
+
+    .xl\:text-h7 {
+      font-size: var(--font-size-h7);
+      font-weight: 450;
+      line-height: 92%;
+      letter-spacing: 0;
+    }
+
+    .xl\:text-h8 {
+      font-size: var(--font-size-h8);
+      font-weight: 450;
+      line-height: 86%;
+      letter-spacing: 0;
+    }
   }
 
   .border-nav {

@@ -59,41 +59,58 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="absolute top-0 left-0 z-2 w-full h-[64px] flex justify-between items-center gap-4 bg-[rgba(0,0,0,0.28)] backdrop-blur-xl border-nav">
-        {/* MOBILE MENU */}
-        {menuOpen && (
-          <div className="fixed z-3 top-0 left-0 flex flex-col w-full h-screen bg-[#6633FF] lg:hidden">
-            {/* MOBILE MENU TOP */}
-            <div className="flex justify-end items-center w-full h-[64px] px-[16px]">
-              <LanguageSelector />
-            </div>
-            {/* MOBILE MENU MID CONTENT */}
-            <div className="p-[16px]">
-              <ul>
-                {navbarList &&
-                  navbarList.length > 0 &&
-                  navbarList.map((l, idx) => {
-                    return (
-                      <li key={`navbar_mobile_list_el_${idx}`}>
-                        <Link href={"/"} className="block py-[16px]">
-                          <h6 className="text-p text-opaque">{l.subtitle}</h6>
-                          <h5 className="text-h7">{l.title}</h5>
-                        </Link>
-                      </li>
-                    );
-                  })}
-              </ul>
-            </div>
-            {/* MOBILE MENU FOOTER */}
-            <div></div>
+      {/* MOBILE MENU */}
+      {menuOpen && (
+        <div className="fixed z-3 top-0 left-0 flex flex-col w-full h-screen bg-[#6633FF] lg:hidden">
+          {/* MOBILE MENU TOP */}
+          <div className="flex justify-between items-center w-full h-[64px] pr-[16px]">
+            <button
+              className="relative z-3 w-[64px] h-full flex justify-center items-center bg-[#6633FF] border-none outline-none cursor-pointer"
+              onClick={handleMenu}
+            >
+              <span className={`w-[36px] h-[10px] border-t-[3px] border-b-[3px] lg:hidden`}></span>
+            </button>
+            <LanguageSelector />
           </div>
-        )}
-
+          {/* MOBILE MENU MID CONTENT */}
+          <div className="p-[16px] flex-1">
+            <ul>
+              {navbarList &&
+                navbarList.length > 0 &&
+                navbarList.map((l, idx) => {
+                  return (
+                    <li key={`navbar_mobile_list_el_${idx}`}>
+                      <Link href={"/"} className="block py-[16px]">
+                        <h6 className="text-p text-opaque">{l.subtitle}</h6>
+                        <h5 className="text-h7">{l.title}</h5>
+                      </Link>
+                    </li>
+                  );
+                })}
+            </ul>
+          </div>
+          {/* MOBILE MENU FOOTER */}
+          <div className="p-[16px]">
+            <div className="pt-[8px] border-t border-t-white">
+              <h5 className="text-p">Città di Lugano</h5>
+              <h6 className="text-p text-textopaque">
+                Comunicazione e innovazione digitale
+                <br />
+                Lugano Living Lab
+                <br />
+                Piazza della Riforma 1<br />
+                CH-6900 Locarno
+              </h6>
+            </div>
+          </div>
+        </div>
+      )}
+      <nav className="absolute top-0 left-0 z-2 w-full h-[64px] flex justify-between items-center gap-4 bg-[rgba(0,0,0,0.28)] backdrop-blur-xl border-nav">
         {/* TOP NAVIGATION BAR CONTENT */}
         <div className="h-full flex items-center gap-[16px]">
           <div className="w-[285px] max-w-[285px] h-full flex items-center">
             <button
-              className="relative z-3 w-[64px] h-full flex justify-center items-center bg-[#6633FF] cursor-pointer"
+              className="relative z-3 w-[64px] h-full flex justify-center items-center bg-[#6633FF] border-none outline-none cursor-pointer"
               onClick={handleMenu}
             >
               <span

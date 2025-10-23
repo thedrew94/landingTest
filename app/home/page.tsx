@@ -8,7 +8,7 @@ import SponsorsSection from "../_components/SponsorsSection";
 
 export default function Page() {
   return (
-    <div className="overflow-x-hidden">
+    <div>
       <div className="relative z-1">
         <video
           autoPlay
@@ -33,7 +33,7 @@ export default function Page() {
       <main className="bg-black">
         <CtaSection />
         {/* MASKED TITLE */}
-        <div className="relative h-full pt-[128px] pb-[64px] px-[16px] overflow-hidden">
+        <div className="relative h-full pt-[128px] pb-[64px] px-[16px]">
           <h2 className="translate-x-[29px] text-h2">Ascoltiamo</h2>
           <h2 className="translate-x-[279px] text-h2">Sperimentiamo</h2>
           <h2 className="translate-x-[198px] text-h2">Misuriamo</h2>
