@@ -20,6 +20,22 @@ interface Args {
 
 export function svgSelector({ svgName = "default", svgWidth = "0px", svgHeight = "0px", svgFill = "#fff" }: Args) {
   switch (svgName) {
+    case "arrow_down":
+      return (
+        <svg
+          viewBox="0 0 11 7"
+          width={svgWidth}
+          height={svgHeight}
+          className={`min-w-[${svgWidth}] min-h-[${svgHeight}]`}
+        >
+          <path
+            d="M1.06055 1.06066L5.06055 5.06066L9.06055 1.06066"
+            stroke={svgFill}
+            strokeWidth="1.5"
+            strokeLinecap="square"
+          />
+        </svg>
+      );
     case "arrow_diagonal":
       return (
         <svg

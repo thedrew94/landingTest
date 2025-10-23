@@ -1,6 +1,7 @@
 import { NavbarListElInterface } from "@/types/interfaces";
 import { svgSelector } from "../_utils/svgSelector";
 import NavbarListEl from "./NavbarListEl";
+import LanguageSelector from "./LanguageSelector";
 
 const navbarList: Array<NavbarListElInterface> = [
   {
@@ -43,8 +44,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="h-full flex items-center gap-[16px]">
-        {/* language selector dropdown element */}
-        <div className="text-h5">IT</div>
+        <LanguageSelector />
         <a
           href="#"
           target="_blank"

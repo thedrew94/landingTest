@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { LanguageCode, LanguageLabel } from "./types";
 
 export interface NavbarListElInterface {
   title: string;
@@ -13,4 +14,9 @@ export interface SponsorElInterface {
 export interface NavItem {
   label: string;
   href: string;
+}
+
+export interface LanguageInterface {
+  code: LanguageCode;
+  label: LanguageLabel;
 }
