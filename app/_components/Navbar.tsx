@@ -3,6 +3,7 @@ import { svgSelector } from "../_utils/svgSelector";
 import NavbarListEl from "./NavbarListEl";
 import LanguageSelector from "./LanguageSelector";
 
+// TOP NAVIGATION BAR ELEMENTS DATA
 const navbarList: Array<NavbarListElInterface> = [
   {
     title: "Chi Siamo",

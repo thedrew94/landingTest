@@ -42,7 +42,7 @@ export default function LanguageSelector() {
   return (
     <div className="relative" ref={languageContainer}>
       <button
-        className="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-800 focus:outline-none"
+        className="language-selector-button"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-label="Select language"

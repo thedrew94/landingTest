@@ -16,6 +16,7 @@ export default function Page() {
           loop
           playsInline
           preload="metadata"
+          // TODO: add poster fallback img
           // poster={""}
           className="sticky z-[-1] top-0 left-0 w-full h-screen object-cover"
           title={"Particles video"}
