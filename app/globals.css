@@ -13,6 +13,7 @@
   --font-size-h4: 2.4rem;
   --font-size-h5: 1.6rem;
   --font-size-h6: 15.6rem;
+  --font-size-h7: 3.6rem;
   --font-size-p: 1.6rem;
 
   /* OTHERS */
@@ -151,6 +152,13 @@ img:not([src]) {
     letter-spacing: 0;
   }
 
+  .text-h7 {
+    font-size: var(--font-size-h7);
+    font-weight: 450;
+    line-height: 92%;
+    letter-spacing: 0;
+  }
+
   .text-p {
     font-size: var(--font-size-p);
     font-weight: 450;
@@ -172,15 +180,34 @@ img:not([src]) {
   .border-row {
     border-top: 1px solid rgba(255, 255, 255, 0.28);
   }
-}
 
-/* CUSTOM TAILWIND STYLES GROUPS */
-.language-selector-button {
-  @apply flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-800 focus:outline-none;
-}
+  .hamburger-icon-appear {
+    animation: hamburgerAppear 0.5s ease-in-out forwards;
+  }
 
-.language-selector-dropdown {
-  @apply absolute w-32 bg-black rounded-md shadow-lg z-10;
-  top: 120%;
-  left: 0;
+  @keyframes hamburgerAppear {
+    0% {
+      transform: rotate(90deg);
+      height: 0px;
+    }
+    50% {
+      transform: rotate(0deg);
+      height: 0px;
+    }
+    100% {
+      transform: rotate(0deg);
+      height: 10px;
+    }
+  }
+
+  /* CUSTOM TAILWIND STYLES GROUPS */
+  .language-selector-button {
+    @apply flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-800 focus:outline-none;
+  }
+
+  .language-selector-dropdown {
+    @apply absolute w-32 bg-black rounded-md shadow-lg z-10;
+    top: 120%;
+    left: 0;
+  }
 }

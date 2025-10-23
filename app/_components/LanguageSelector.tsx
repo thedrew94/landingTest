@@ -59,7 +59,7 @@ export default function LanguageSelector() {
       </button>
 
       {isOpen && (
-        <ul className="absolute top-[120%] left-0 w-32 bg-black rounded-md shadow-lg">
+        <ul className="absolute top-[120%] left-0 w-32 py-[8px] bg-black rounded-md shadow-lg">
           {languages.map(({ code, label }) => (
             <li key={code}>
               <button

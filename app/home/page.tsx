@@ -8,7 +8,7 @@ import SponsorsSection from "../_components/SponsorsSection";
 
 export default function Page() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className="relative z-1">
         <video
           autoPlay

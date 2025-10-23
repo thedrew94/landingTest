@@ -4,6 +4,7 @@ import { LanguageCode, LanguageLabel } from "./types";
 export interface NavbarListElInterface {
   title: string;
   subtitle: string;
+  hrefPath: string;
 }
 
 export interface SponsorElInterface {
