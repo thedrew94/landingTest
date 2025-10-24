@@ -1,6 +1,6 @@
 export default function IntroSection() {
   return (
-    <div className="flex flex-col gap-[256px] pt-[192px] pb-[96px] xl:pt-[256px] xl:pb-[128px] px-[16px]">
+    <div className="flex flex-col gap-[192px] xl:gap-[256px] pt-[192px] pb-[96px] xl:pt-[256px] xl:pb-[128px] px-[16px]">
       <div className="relative">
         <span className="absolute top-0 left-0 text-h7 xl:text-h3">*</span>
         <h2 className="indent-[80px] xl:indent-[475px] text-h7 xl:text-h3">

@@ -5,28 +5,26 @@ import IntroSection from "../_components/IntroSection";
 import Navbar from "../_components/Navbar";
 import Slider from "../_components/Slider";
 import SponsorsSection from "../_components/SponsorsSection";
-import Video from "../_components/Video";
 
 export default function Page() {
   return (
     <div>
       <div className="relative z-1">
-        {/* <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          // TODO: add poster fallback img
-          // poster={""}
-          className="sticky z-[-1] top-0 left-0 w-full h-screen object-cover"
-          title={"Particles video"}
-        >
-          <source src={"/particles_video.mp4"} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
-        <div className="sticky z-[-1] top-0 left-0">
-          <Video />
+        <div className="sticky z-[-1] top-0 left-0 overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            // TODO: add poster fallback img
+            // poster={""}
+            className="w-full h-screen object-cover translate-x-[25%]"
+            title={"Particles video"}
+          >
+            <source src={"/particles_video.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <header className="absolute top-0 left-0 w-full p-[16px]">
           <Navbar />
@@ -37,7 +35,7 @@ export default function Page() {
       <main className="bg-black">
         <CtaSection />
         {/* MASKED TITLE */}
-        <div className="relative w-full h-full pt-[96px] pb-[49px] xl:pt-[128px] xl:pb-[64px] px-[16px] overflow-hidden">
+        <div className="relative h-full pt-[96px] pb-[49px] xl:pt-[128px] xl:pb-[64px] px-[16px] overflow-hidden">
           <h2 className="text-left xl:translate-x-[29px] text-h9 xl:text-h2">Ascoltiamo</h2>
           <h2 className="text-right xl:text-left xl:translate-x-[279px] text-h9 xl:text-h2">Sperimentiamo</h2>
           <h2 className="text-left xl:translate-x-[198px] text-h9 xl:text-h2">Misuriamo</h2>

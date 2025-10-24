@@ -8,7 +8,7 @@ export default function Video() {
       preload="metadata"
       // TODO: add poster fallback img
       // poster={""}
-      className="w-full h-full object-cover"
+      className="min-w-full w-full min-h-full h-full object-cover"
       title={"Particles video"}
     >
       <source src={"/particles_video.mp4"} type="video/mp4" />

@@ -10,8 +10,10 @@ import SlideImg1 from "@/public/mockup_img1.jpg";
 import SlideImg2 from "@/public/mockup_img2.png";
 import SlideImg3 from "@/public/mockup_img3.jpg";
 import SlideImg4 from "@/public/mockup_img4.png";
+import { SlideInterface } from "@/types/interfaces";
 
-const slides: Array<Record<any, any>> = [
+// SLIDES MOCKUP DATA
+const slides: Array<SlideInterface> = [
   {
     title: "App MyLugano",
     bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",

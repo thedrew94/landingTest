@@ -21,3 +21,10 @@ export interface LanguageInterface {
   code: LanguageCode;
   label: LanguageLabel;
 }
+
+export interface SlideInterface {
+  title: string;
+  bodyText: string;
+  img: StaticImageData | string;
+  imgAlt: string;
+}

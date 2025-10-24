@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="relative w-full h-[calc(100vh-32px)] flex flex-col justify-end gap-[16px] xl:gap-0 xl:items-end xl:justify-start xl:flex-row">
+    <div className="relative w-full min-h-[500px] h-[calc(100vh-32px)] flex flex-col justify-end gap-[16px] xl:gap-0 xl:items-end xl:justify-start xl:flex-row">
       <div className="absolute z-1 w-full top-1/2 translate-y-[-50%] flex justify-between">
         <p className="text-p">Tecnologia</p>
         <p className="text-p">Innovazione</p>
