@@ -98,6 +98,7 @@ export default function Slider() {
                   // placeholder="blur"
                   quality={80}
                   fill
+                  draggable={false}
                 />
                 <div className="absolute z-1 top-0 left-0 w-full h-full">
                   <span className="p-[16px] text-h7 lg:text-h3">{idx + 1}</span>
