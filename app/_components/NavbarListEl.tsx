@@ -37,7 +37,7 @@ export default function NavbarListEl({ title = "", subtitle = "" }: Props) {
   }, []);
 
   return (
-    <li className="nav-li flex flex-col justify-center h-full">
+    <li className="nav-li flex flex-col justify-center h-full cursor-pointer select-none">
       <h6 className="text-h5 text-[#ffffff47]">{subtitle}</h6>
       <h5 className="text-h5">{title}</h5>
     </li>
