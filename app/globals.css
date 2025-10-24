@@ -16,6 +16,7 @@
   --font-size-h7: 3.6rem;
   --font-size-h8: 6rem;
   --font-size-h9: 5.6rem;
+  --font-size-h10: 1.8rem;
   --font-size-p: 1.6rem;
 
   /* OTHERS */
@@ -176,6 +177,13 @@ img:not([src]) {
     letter-spacing: 0;
   }
 
+  .text-h10 {
+    font-size: var(--font-size-h10);
+    font-weight: 450;
+    line-height: 114.9%;
+    letter-spacing: 0;
+  }
+
   .text-p {
     font-size: var(--font-size-p);
     font-weight: 450;
@@ -244,6 +252,13 @@ img:not([src]) {
       font-size: var(--font-size-h9);
       font-weight: 450;
       line-height: 85%;
+      letter-spacing: 0;
+    }
+
+    .xl\:text-h10 {
+      font-size: var(--font-size-h10);
+      font-weight: 450;
+      line-height: 114.9%;
       letter-spacing: 0;
     }
 
