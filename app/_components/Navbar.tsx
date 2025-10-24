@@ -113,9 +113,9 @@ export default function Navbar() {
       <nav className="absolute top-0 left-0 z-2 w-full h-[64px] flex justify-between items-center gap-4 bg-[rgba(0,0,0,0.28)] backdrop-blur-xl border-nav">
         {/* TOP NAVIGATION BAR CONTENT */}
         <div className="h-full flex items-center gap-[16px]">
-          <div className="w-[180px] max-w-[180px] xl:w-[285px] xl:max-w-[285px] h-full flex items-center">
+          <div className="w-[180px] max-w-[180px] lg:w-[285px] lg:max-w-[285px] h-full flex items-center">
             <button
-              className="relative z-3 w-[64px] h-full flex justify-center items-center bg-[#6633FF] border-none outline-none cursor-pointer"
+              className="relative z-3 w-[64px] h-full flex justify-center items-center bg-[#6633FF] border-none outline-none cursor-pointer lg:hidden"
               onClick={handleMenu}
             >
               <span
@@ -127,12 +127,15 @@ export default function Navbar() {
                 {svgSelector({ svgName: "star", svgWidth: "32", svgHeight: "28", svgFill: "#fff" })}
               </span>
             </button>
+            <span className="w-[64px] h-full justify-center items-center bg-[#6633FF] hidden lg:flex">
+              {svgSelector({ svgName: "star", svgWidth: "32", svgHeight: "28", svgFill: "#fff" })}
+            </span>
             <h2 className="px-[24px] py-[16px] text-h5">
               Lugano <br />
               LivingLab
             </h2>
           </div>
-          <ul className="hidden gap-[32px] lg:flex">
+          <ul className="hidden lg:flex gap-[32px] h-full">
             {navbarList &&
               navbarList.length > 0 &&
               navbarList.map((l, idx) => {
@@ -141,7 +144,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="h-full flex items-center gap-[16px]">
-          <div className="hidden xl:block">
+          <div className="hidden lg:block">
             <LanguageSelector />
           </div>
           <a

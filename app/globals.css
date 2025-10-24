@@ -199,70 +199,70 @@ img:not([src]) {
   }
 
   @media (min-width: 1280px) {
-    .xl\:text-h1 {
+    .lg\:text-h1 {
       font-size: var(--font-size-h1);
       font-weight: 450;
       line-height: 86%;
       letter-spacing: 0;
     }
 
-    .xl\:text-h2 {
+    .lg\:text-h2 {
       font-size: var(--font-size-h2);
       font-weight: 450;
       line-height: 85%;
       letter-spacing: 0;
     }
 
-    .xl\:text-h3 {
+    .lg\:text-h3 {
       font-size: var(--font-size-h3);
       font-weight: 450;
       line-height: 92%;
       letter-spacing: 0;
     }
 
-    .xl\:text-h4 {
+    .lg\:text-h4 {
       font-size: var(--font-size-h4);
       font-weight: 450;
       line-height: 114.9%;
       letter-spacing: 0;
     }
 
-    .xl\:text-h6 {
+    .lg\:text-h6 {
       font-size: var(--font-size-h6);
       font-weight: 450;
       line-height: 86%;
       letter-spacing: 0;
     }
 
-    .xl\:text-h7 {
+    .lg\:text-h7 {
       font-size: var(--font-size-h7);
       font-weight: 450;
       line-height: 92%;
       letter-spacing: 0;
     }
 
-    .xl\:text-h8 {
+    .lg\:text-h8 {
       font-size: var(--font-size-h8);
       font-weight: 450;
       line-height: 86%;
       letter-spacing: 0;
     }
 
-    .xl\:text-h9 {
+    .lg\:text-h9 {
       font-size: var(--font-size-h9);
       font-weight: 450;
       line-height: 85%;
       letter-spacing: 0;
     }
 
-    .xl\:text-h10 {
+    .lg\:text-h10 {
       font-size: var(--font-size-h10);
       font-weight: 450;
       line-height: 114.9%;
       letter-spacing: 0;
     }
 
-    .xl\:text-p {
+    .lg\:text-p {
       font-size: var(--font-size-p);
       font-weight: 450;
       line-height: 125%;
@@ -299,6 +299,81 @@ img:not([src]) {
 
   .filter-gray {
     filter: grayscale(100%);
+  }
+
+  .nav-li,
+  .nav-li-hover,
+  .nav-li-hover-out {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .nav-li.nav-li-hover-out::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #fff;
+    animation: growOut 0.25s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .nav-li.nav-li-hover::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 1px solid #fff;
+    animation: grow 0.25s linear;
+    animation-fill-mode: forwards;
+    /* position: absolute;
+    z-index: 2;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #fff;
+    transform: translateX(100%);
+    transition: all 0.25s; */
+  }
+
+  /* .nav-li:hover::after {
+    transform: translateX(0);
+  } */
+
+  /* .nav-li::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 1px solid #fff;
+  }
+
+  .nav-li:hover::before {
+    animation: grow 0.25s linear;
+    animation-fill-mode: forwards;
+  } */
+
+  @keyframes grow {
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes growOut {
+    100% {
+      transform: translateX(100%);
+    }
   }
 
   /* CUSTOM TAILWIND STYLES GROUPS */

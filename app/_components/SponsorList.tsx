@@ -14,7 +14,7 @@ export default function SponsorList({ sponsorListData = [] }: Props) {
           return (
             <li
               key={`sponsor_el_${idx}`}
-              className="min-w-[129px] w-[129px] xl:min-w-[180px] xl:w-[180px] p-[16px] xl:p-[24px] aspect-square bg-[rgba(255,255,255,0.16)]"
+              className="min-w-[129px] w-[129px] lg:min-w-[180px] lg:w-[180px] p-[16px] lg:p-[24px] aspect-square bg-[rgba(255,255,255,0.16)]"
             >
               <div className="relative w-full h-full opacity-100 mix-blend-lighten">
                 <Image

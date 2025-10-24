@@ -15,7 +15,7 @@ export default function StickyVideo() {
         preload="metadata"
         // TODO: add poster fallback img
         // poster={""}
-        className="w-full h-screen object-cover translate-x-[25%]"
+        className="w-full h-screen object-cover lg:translate-x-[25%]"
         title={"Particles video"}
       >
         <source src={"/particles_video.mp4"} type="video/mp4" />
