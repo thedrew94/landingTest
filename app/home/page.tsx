@@ -58,8 +58,6 @@ export default function Page() {
           <Slider />
         </div>
         <SponsorsSection />
-        {/* ANIMATED HORIZONTAL SLIDER SECTION */}
-        <div></div>
       </main>
 
       {/* FOOTER */}

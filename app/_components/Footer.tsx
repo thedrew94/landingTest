@@ -17,13 +17,13 @@ const secondaryNavItems: Array<NavItem> = [
 
 export default function Footer() {
   return (
-    <footer className="pt-[64px] bg-black">
-      <div className="flex flex-col justify-between h-[900px] p-[16px]">
+    <footer className="pt-[48px] xl:pt-[64px] bg-black">
+      <div className="flex flex-col justify-between h-[473px] xl:h-[900px] p-[16px]">
         {/* FOOTER TOP */}
-        <div className="flex justify-between gap-[16px]">
+        <div className="flex flex-col xl:flex-row justify-between gap-[24px] xl:gap-[16px]">
           <div>
-            <h5 className="text-h4">Città di Lugano</h5>
-            <h6 className="text-h4 text-[rgba(255,255,255,0.56)]">
+            <h5 className="text-h10 xl:text-h4">Città di Lugano</h5>
+            <h6 className="text-h10 xl:text-h4 text-[rgba(255,255,255,0.56)]">
               Comunicazione e innovazione digitale
               <br />
               Lugano Living Lab
@@ -33,7 +33,7 @@ export default function Footer() {
             </h6>
           </div>
           <div className="flex gap-[16px]">
-            <ul className="flex flex-col gap-[16px] w-[340px]">
+            <ul className="flex flex-col gap-[16px] w-[163.5px] xl:w-[340px]">
               {mainNavItems.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-p">
@@ -42,7 +42,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <ul className="flex flex-col gap-[16px] w-[340px]">
+            <ul className="flex flex-col gap-[16px] w-[163.5px] xl:w-[340px]">
               {secondaryNavItems.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-p">
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
         </div>
         {/* FOOTER BOTTOM */}
-        <ul className="flex items-center gap-[16px]">
+        <ul className="flex flex-wrap items-center gap-[16px]">
           <li>
             <a href="#" className="flex gap-[6px] text-p">
               Linkedin{svgSelector({ svgName: "arrow_diagonal", svgWidth: "13", svgHeight: "13", svgFill: "#fff" })}
