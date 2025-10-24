@@ -15,6 +15,11 @@ const secondaryNavItems: Array<NavItem> = [
   { label: "Impressum", href: "/impressum" },
 ];
 
+/**
+ * Website footer.
+ *
+ * @returns {JSX.Element}
+ */
 export default function Footer() {
   return (
     <footer className="pt-[48px] xl:pt-[64px] bg-black">

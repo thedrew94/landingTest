@@ -52,6 +52,11 @@ const slides: Array<SlideInterface> = [
   },
 ];
 
+/**
+ * Main slider component that uses Swiper library.
+ *
+ * @returns {JSX.Element}
+ */
 export default function Slider() {
   // We use (swiperRef) to store the Swiper instance not to reference the DOM element
   const swiperRef = useRef<SwiperType | null>(null);

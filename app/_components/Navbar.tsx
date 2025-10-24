@@ -31,6 +31,11 @@ const navbarList: Array<NavbarListElInterface> = [
   },
 ];
 
+/**
+ * Main navigation top bar rendered at the top of the home.
+ *
+ * @returns {JSX.Element}
+ */
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 

@@ -1,3 +1,8 @@
+/**
+ * IntroSection component that renders the primary information about the website.
+ *
+ * @returns {JSX.Element}
+ */
 export default function IntroSection() {
   return (
     <div className="flex flex-col gap-[192px] xl:gap-[256px] pt-[192px] pb-[96px] xl:pt-[256px] xl:pb-[128px] px-[16px]">

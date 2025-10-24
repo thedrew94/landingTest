@@ -15,6 +15,11 @@ const sponsorsPrimary: Array<SponsorElInterface> = [{ name: "sponsor1", imgPath:
 // prettier-ignore
 const sponsorsSecondary: Array<SponsorElInterface> = [{ name: "sponsor1", imgPath: SponsorImg1 }, { name: "sponsor1", imgPath: SponsorImg2 }, { name: "sponsor1", imgPath: SponsorImg3 }, { name: "sponsor1", imgPath: SponsorImg4 }, { name: "sponsor1", imgPath: SponsorImg5 }, { name: "sponsor1", imgPath: SponsorImg6 }, { name: "sponsor1", imgPath: SponsorImg7 }, { name: "sponsor1", imgPath: SponsorImg1 }, { name: "sponsor1", imgPath: SponsorImg2 }];
 
+/**
+ * Rendering multiple lists in rows of the sponsors
+ *
+ * @returns {JSX.Element}
+ */
 export default function SponsorsSection() {
   return (
     <div className="flex flex-col gap-[8px] w-full py-[96px] xl:py-[128px] overflow-hidden">
