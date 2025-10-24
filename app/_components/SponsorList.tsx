@@ -18,7 +18,7 @@ export default function SponsorList({ sponsorListData = [] }: Props) {
             >
               <div className="relative w-full h-full opacity-100 mix-blend-lighten">
                 <Image
-                  className="object-cover"
+                  className="object-cover filter-gray"
                   src={sEl.imgPath || "/fallback-image.png"}
                   alt={sEl.name || "Sponsor Image"}
                   // placeholder="blur"

@@ -297,6 +297,10 @@ img:not([src]) {
     }
   }
 
+  .filter-gray {
+    filter: grayscale(100%);
+  }
+
   /* CUSTOM TAILWIND STYLES GROUPS */
   .language-selector-button {
     @apply flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-800 focus:outline-none;

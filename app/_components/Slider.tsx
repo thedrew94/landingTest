@@ -6,43 +6,46 @@ import { FreeMode } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import Image from "next/image";
-import SlideImg from "@/public/mockup_img1.jpg";
+import SlideImg1 from "@/public/mockup_img1.jpg";
+import SlideImg2 from "@/public/mockup_img2.png";
+import SlideImg3 from "@/public/mockup_img3.jpg";
+import SlideImg4 from "@/public/mockup_img4.png";
 
 const slides: Array<Record<any, any>> = [
   {
     title: "App MyLugano",
     bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
-    img: SlideImg,
+    img: SlideImg1,
     imgAlt: "Mockup image",
   },
   {
     title: "App MyLugano",
     bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
-    img: SlideImg,
+    img: SlideImg2,
     imgAlt: "Mockup image",
   },
   {
     title: "App MyLugano",
     bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
-    img: SlideImg,
+    img: SlideImg3,
     imgAlt: "Mockup image",
   },
   {
     title: "App MyLugano",
     bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
-    img: SlideImg,
+    img: SlideImg4,
     imgAlt: "Mockup image",
   },
   {
     title: "App MyLugano",
     bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
-    img: SlideImg,
+    img: SlideImg1,
     imgAlt: "Mockup image",
   },
   {
     title: "App MyLugano",
     bodyText: "Un ecosistema digitale per vivere al meglio la citta e sostenere l'economia locale.",
-    img: SlideImg,
+    img: SlideImg2,
     imgAlt: "Mockup image",
   },
 ];
