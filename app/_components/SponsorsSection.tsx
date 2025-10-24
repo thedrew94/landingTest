@@ -11,7 +11,7 @@ const sponsorsSecondary: Array<SponsorElInterface> = [{ name: "sponsor1", imgPat
 
 export default function SponsorsSection() {
   return (
-    <div className="flex flex-col gap-[8px] w-full py-[128px] overflow-hidden">
+    <div className="flex flex-col gap-[8px] w-full py-[96px] xl:py-[128px] overflow-hidden">
       <SponsorList sponsorListData={sponsorsPrimary} />
       <SponsorList sponsorListData={sponsorsSecondary} />
     </div>
